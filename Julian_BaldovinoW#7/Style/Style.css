@@ -1,0 +1,190 @@
+header{
+background-color: #191970;
+padding: 5px;
+margin: 5px;
+display: flex;
+justify-content: space-between;
+max-height: 70px;
+
+}
+
+
+.logo1{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.Imagen1 /*Figure*/{
+max-height: 30px;
+
+}
+
+.container{
+max-width: 1500px;
+margin: 0 auto;
+display: inherit;
+justify-content: inherit;
+align-items: inherit;
+flex-wrap: inherit;
+
+}
+
+
+.navbar/* Aqui se cambia el color de la barra de navegación */{
+display: inline-flex;
+max-width: 80;
+max-height: 120px;
+background-color: white;
+
+}
+
+.navbar-nav{
+padding: 0px;
+margin: 10px;
+
+
+}
+
+.navbar-toggler{
+ align-content: flex-start !important;
+}
+
+.nav-item{
+list-style: none;
+display: inline;
+margin: 10px;
+
+}
+
+.nav-link{
+font-family: 'Noto Sans JP', sans-serif !important; 
+color: black !important;
+}
+
+
+.carousel-inner{
+max-width: auto;
+
+}
+
+
+.d-block{
+    max-height: 583px !important;
+    max-width: 1100 !important;
+}
+
+
+.card-img-top{
+    max-height: 320;
+    max-width: 280;
+    display: flexbox;
+}
+
+.card-body{
+  display: inline-block;
+  background-color:white;
+ 
+}
+
+.card1 {
+display: inline-block;
+margin: 5px;
+padding: 5px;
+
+}
+
+.card2{
+display: inline-block;
+margin: 5px;
+padding: 5px;
+}
+
+.card3{
+display: inline-block;
+margin: 5px;
+padding: 5px;
+}
+
+.card4{
+display: inline-block;
+margin: 5px;
+padding: 5px;
+}
+
+.table{
+max-width: 1300px;
+max-height: 650px;
+}
+
+.embed-responsive{
+max-width: 1200px;
+max-height: 500px;
+display: flex;
+  
+}
+
+.form{
+max-height: 500px;
+max-width: 1200px;
+background-color:yellow;
+}
+
+.form-group{
+align-content: center;
+background-color: #191970;
+color: black !important;
+font-family: 'Noto Sans JP', sans-serif !important; 
+}
+
+.form-control{
+align-content: center;
+
+
+}
+
+.btn{
+    align-items: center;
+    margin: 10px;
+}
+
+.section1{
+    background-color: #a9a9a9 !important;
+    }
+
+.section2{
+    background-color: #a9a9a9;
+    }
+
+
+.section3{
+    background-color: #a9a9a9;
+    }
+
+.section4{
+    background-color:#a9a9a9;
+    }
+
+.section5{
+background-color: #a9a9a9;
+}
+
+.section6{
+    background-color: #433792;
+    }
+
+.section7{
+    background-color:#191970;
+}
+
+.icon1{
+ margin-left: 20px ;   
+}
+
+.icon2{
+    margin-left: 20px ;   
+}
+
+.title4{
+color: black !important;
+font-family: 'Noto Sans JP', sans-serif !important;   
+}
