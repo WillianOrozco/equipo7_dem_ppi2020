@@ -1,0 +1,84 @@
+use b4qafy366zqocitrzfru;
+CREATE TABLE Usuario(
+    ID_USUARIO INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	Nombre VARCHAR(100) NOT NULL,
+	Apellido VARCHAR(100) NOT NULL,
+    Correo VARCHAR(100) NOT NULL UNIQUE,
+    Usuario VARCHAR(100) NOT NULL UNIQUE,
+    Contraseña VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Test(
+    ID_TEST INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Fecha DATE NOT NULL,
+    id_usuario INT UNSIGNED,
+    FOREIGN KEY(id_usuario) REFERENCES Usuario(ID_USUARIO)
+);
+CREATE TABLE Test_Resultados(
+    id_test INT UNSIGNED,
+    id_resultado INT UNSIGNED,
+    PRIMARY KEY(id_test, id_resultado),
+    FOREIGN KEY(id_resultado) REFERENCES Resultados(ID_RESULTADO),
+    FOREIGN KEY(id_test) REFERENCES Test(ID_TEST)
+);
+CREATE TABLE Resultados(
+    ID_RESULTADO INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	Descripcion VARCHAR(200) NOT NULL,
+    id_respuesta INT UNSIGNED,
+    FOREIGN KEY(id_respuesta) REFERENCES Respuestas(ID_RESPUESTA)
+);
+CREATE TABLE Respuestas(
+    ID_RESPUESTA INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	Respuesta1 VARCHAR(50),
+	Respuesta2 VARCHAR(50),
+	Respuesta3 VARCHAR(50),
+	Respuesta4 VARCHAR(50),
+	Respuesta5 VARCHAR(50),
+	Respuesta6 VARCHAR(50),
+	Respuesta7 VARCHAR(50),
+	Respuesta8 VARCHAR(50),
+	Respuesta9 VARCHAR(50),
+	Respuesta10 VARCHAR(50),
+	Respuesta11 VARCHAR(50),
+	Respuesta12 VARCHAR(50),
+	Respuesta13 VARCHAR(50),
+	Respuesta14 VARCHAR(50),
+	Respuesta15 VARCHAR(50),
+	Respuesta16 VARCHAR(50),
+	Respuesta17 VARCHAR(50),
+	Respuesta18 VARCHAR(50),
+	Respuesta19 VARCHAR(50),
+	Respuesta20 VARCHAR(50),
+	Respuesta21 VARCHAR(50),
+	Respuesta22 VARCHAR(50),
+	Respuesta23 VARCHAR(50),
+	Respuesta24 VARCHAR(50),
+	Respuesta25 VARCHAR(50),
+	Respuesta26 VARCHAR(50),
+	Respuesta27 VARCHAR(50),
+	Respuesta28 VARCHAR(50),
+	Respuesta29 VARCHAR(50),
+	Respuesta30 VARCHAR(50),
+	Respuesta31 VARCHAR(50),
+	Respuesta32 VARCHAR(50),
+	Respuesta33 VARCHAR(50),
+	Respuesta34 VARCHAR(50),
+	Respuesta35 VARCHAR(50),
+	Respuesta36 VARCHAR(50),
+	Respuesta37 VARCHAR(50),
+	Respuesta38 VARCHAR(50),
+	Respuesta39 VARCHAR(50),
+	Respuesta40 VARCHAR(50),
+	Respuesta41 VARCHAR(50),
+	Respuesta42 VARCHAR(50),
+	Respuesta43 VARCHAR(50),
+	Respuesta44 VARCHAR(50),
+	Respuesta45 VARCHAR(50),
+	Respuesta46 VARCHAR(50),
+	Respuesta47 VARCHAR(50),
+	Respuesta48 VARCHAR(50),
+	id_test INT UNSIGNED,
+	FOREIGN KEY(id_test) REFERENCES Test(ID_TEST)
+);
+INSERT INTO Respuestas VALUES (NUll,"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1", NULL)
+
