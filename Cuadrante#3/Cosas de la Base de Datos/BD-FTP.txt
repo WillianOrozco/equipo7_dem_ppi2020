@@ -14,6 +14,7 @@ CREATE TABLE Test(
     id_usuario INT UNSIGNED,
     FOREIGN KEY(id_usuario) REFERENCES Usuario(ID_USUARIO)
 );
+
 CREATE TABLE Test_Resultados(
     id_test INT UNSIGNED,
     id_resultado INT UNSIGNED,
